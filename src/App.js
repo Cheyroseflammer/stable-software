@@ -1,23 +1,29 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import Signup from './components/Signup';
-import Login from './components/Login';
-import Horses from './components/Horses';
-import Riders from './components/Riders';
-import Schedule from './components/Schedule';
-import Welcome from './components/Welcome';
+import Home from './pages/Home';
+import Riders from './pages/Riders';
+import Horses from './pages/Horses';
+import Schedule from './pages/Schedule';
+import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   return (
-    <main className="App">
-      <Nav />
-      <Welcome />
-      <Signup />
-      <Login />
-      <Horses />
-      <Riders />
-      <Schedule />
-    </main>
+    <div className="App">
+      <Router>
+        <Nav />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/horses" exact component={Horses} />
+          <Route path="/riders" exact component={Riders} />
+          <Route path="/schedule" exact component={Schedule} />
+          <Route path="/signup" exact component={Signup} />
+        </Switch>
+      </Router>
+      <Footer />
+    </div>
   );
 }
 

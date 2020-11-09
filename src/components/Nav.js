@@ -1,15 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
+import '../styles/Nav.css';
+import { Link } from 'react-router-dom';
 
 export default class Nav extends Component {
+  state = {};
   render() {
     return (
       <div className="nav">
-        <a href="#"> Home </a>
-        <a href="#"> Horses </a>
-        <a href="#"> Riders </a>
-        <a href="#"> Schedule </a>
-        <a href="#"> Login/Sign Up </a>
+        <nav className="container">
+          <Link to="/"> Home</Link>
+          <Link to="/riders"> Riders</Link>
+          <Link to="/horses"> Horses</Link>
+          <Link to="/schedule"> Schedule</Link>
+          <Link to="/signup">Sign Up</Link>
+        </nav>
       </div>
     );
   }
