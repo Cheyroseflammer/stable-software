@@ -1,4 +1,5 @@
 .hello h1 {
+  padding-top: 20%;
   color: black;
 }
 .hello h3 {
@@ -6,4 +7,11 @@
 }
 .hello p {
   color: black;
+}
+
+button {
+  border-radius: 5px;
+  background-color: #e07a5f;
+  color: #f4f1de;
+  font-size: large;
 }

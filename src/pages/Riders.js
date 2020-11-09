@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class Riders extends Component {
   render() {
@@ -11,15 +12,21 @@ export default class Riders extends Component {
         <body>
           <div class="rider-roster">
             <h2>Chey</h2>
-            <button class="horses">Horses</button>
+            <Link to="/horses">
+              <button class="horses">Horses</button>
+            </Link>
           </div>
           <div class="rider-roster">
             <h2>Megan</h2>
-            <button class="horses">Horses</button>
+            <Link to="/horses">
+              <button class="horses">Horses</button>
+            </Link>
           </div>
           <div class="rider-roster">
             <h2>Lindsay</h2>
-            <button class="horses">Horses</button>
+            <Link to="/horses">
+              <button class="horses">Horses</button>
+            </Link>
           </div>
         </body>
       </div>

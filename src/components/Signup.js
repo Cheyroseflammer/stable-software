@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Input, Required } from './Utilities';
+import '../styles/Signup.css';
 
 export default class Signup extends Component {
   static defaultProps = {
@@ -27,6 +28,7 @@ export default class Signup extends Component {
     return (
       <form className="Signup" onSubmit={this.handleSubmit}>
         <div role="alert">{error && <p className="red">{error}</p>}</div>
+        <h2>Sign up</h2>
         <div className="full_name">
           <label htmlFor="Signup__full_name">
             Full name <Required />

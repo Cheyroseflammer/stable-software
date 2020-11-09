@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Input } from './Utilities';
+import '../styles/Login.css';
 
 export default class Login extends Component {
   static defaultProps = {
@@ -27,7 +28,7 @@ export default class Login extends Component {
         <div role="alert">{error && <p className="red">{error}</p>}</div>
         <div className="user_name">
           <label htmlFor="Login__user_name">User name</label>
-          <Input name="user_name" id="Login__user_name"></Input>
+          <Input name="user_name" type="text" id="Login__user_name"></Input>
         </div>
         <div className="password">
           <label htmlFor="Login__password">Password</label>

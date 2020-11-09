@@ -13,7 +13,7 @@ export default class Nav extends Component {
           <Link to="/riders"> Riders</Link>
           <Link to="/horses"> Horses</Link>
           <Link to="/schedule"> Schedule</Link>
-          <Link to="/signup">Sign Up</Link>
+          <Link to="/login">Login</Link>
         </nav>
       </div>
     );

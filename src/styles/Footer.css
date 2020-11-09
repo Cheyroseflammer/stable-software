@@ -1,6 +1,6 @@
 footer {
   padding: 15px;
-  background-color: #3d405b;
+  background-color: #526e61;
   position: fixed;
   padding: 15px 15px 15px 15px;
   bottom: 0;
@@ -8,7 +8,7 @@ footer {
 }
 
 footer span {
-  background-color: #3d405b;
-  color: white;
+  background-color: #526e61;
+  color: #f4f1de;
   font-weight: bolder;
 }
