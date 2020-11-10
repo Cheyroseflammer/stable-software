@@ -1,0 +1,26 @@
+.Stable-form {
+  color: Black;
+}
+
+.Stable-form label {
+  display: block;
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+
+.Stable-form button {
+  background-color: #3d405b;
+  border-radius: 4px;
+  border: 0;
+  color: #cacaca;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.Stable-form button[type='submit']:hover {
+  background-color: #81b29a;
+  color: white;
+}

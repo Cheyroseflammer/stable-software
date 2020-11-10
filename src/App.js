@@ -9,6 +9,7 @@ import Schedule from './pages/Schedule';
 import Footer from './components/Footer';
 import './App.css';
 import Signup from './components/Signup';
+import AddRider from './components/AddRider';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/schedule" exact component={Schedule} />
           <Route path="/login" exact component={Login} />
           <Route path="/signup" exact component={Signup} />
+          <Route path="/addrider" exact component={AddRider} />
         </Switch>
       </Router>
       <Footer />

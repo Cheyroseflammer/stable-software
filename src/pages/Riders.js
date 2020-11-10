@@ -5,30 +5,12 @@ export default class Riders extends Component {
   render() {
     return (
       <div className="riders">
-        <header>
-          <h1>Rider Roster</h1>
-        </header>
+        <h2>Riders</h2>
 
-        <body>
-          <div class="rider-roster">
-            <h2>Chey</h2>
-            <Link to="/horses">
-              <button class="horses">Horses</button>
-            </Link>
-          </div>
-          <div class="rider-roster">
-            <h2>Megan</h2>
-            <Link to="/horses">
-              <button class="horses">Horses</button>
-            </Link>
-          </div>
-          <div class="rider-roster">
-            <h2>Lindsay</h2>
-            <Link to="/horses">
-              <button class="horses">Horses</button>
-            </Link>
-          </div>
-        </body>
+        <h3>Add Rider</h3>
+        <Link to="/addrider">
+          <button>Add Rider</button>
+        </Link>
       </div>
     );
   }
