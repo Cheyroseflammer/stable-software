@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
-import StableForm from './StableForm';
 
 export default class AddHorse extends Component {
-  static defaultProps = {
-    riders: [],
-  };
   render() {
     const { riders } = this.props;
     return (
       <section className="AddHorse">
         <h2>Add Horse</h2>
-        <StableForm>
+        <form>
           <div className="field">
             <label htmlFor="horse-name-input">Name</label>
             <input type="text" id="AddHorse-name-input" />
@@ -22,6 +18,10 @@ export default class AddHorse extends Component {
           <div className="field">
             <label htmlFor="horse-age-input">Age</label>
             <input type="text" id="horse-age-input" />
+          </div>
+          <div className="field">
+            <label htmlFor="horse-stall-input">Stall</label>
+            <input type="text" id="horse-stall-input" />
           </div>
           <div className="field">
             <label htmlFor="horse-breed-input">Breed</label>
@@ -41,7 +41,7 @@ export default class AddHorse extends Component {
           <div className="buttons">
             <button type="submit">Add Horse</button>
           </div>
-        </StableForm>
+        </form>
       </section>
     );
   }

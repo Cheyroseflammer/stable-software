@@ -9,10 +9,10 @@ export default class Nav extends Component {
     return (
       <div className="nav">
         <nav className="container">
-          <Link to="/"> Home</Link>
+          <Link to="/home"> Home</Link>
           <Link to="/riders"> Riders</Link>
           <Link to="/horses"> Horses</Link>
-          <Link to="/schedule"> Schedule</Link>
+          {/* <Link to="/schedule"> Schedule</Link> */}
           <Link to="/login">Login</Link>
         </nav>
       </div>
