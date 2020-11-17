@@ -7,8 +7,8 @@ export default class AddRider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: '',
-      content: '',
+      id: '',
+      name: '',
     };
   }
 
@@ -16,8 +16,8 @@ export default class AddRider extends Component {
     event.preventDefault();
 
     const rider = {
-      title: this.state.title,
-      content: this.state.content,
+      id: this.state.id,
+      name: this.state.name,
     };
 
     fetch(`${config.API_ENDPOINT}/riders`, {
@@ -43,6 +43,7 @@ export default class AddRider extends Component {
         console.log({ error });
       });
   };
+
   render() {
     return (
       <form className="AddRider" onSubmit={this.handleSubmit}>

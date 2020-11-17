@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import './App.css';
 import Signup from './components/Signup';
 import AddRider from './components/AddRider';
+import AddHorse from './components/AddHorse';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/login" exact component={Login} />
           <Route path="/signup" exact component={Signup} />
           <Route path="/addrider" exact component={AddRider} />
+          <Route path="/addhorse" exact component={AddHorse} />
         </Switch>
       </Router>
       <Footer />

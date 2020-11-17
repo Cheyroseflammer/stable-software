@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 
 export default class AddHorse extends Component {
+  static defaultProps = {
+    riders: [],
+  };
   render() {
     const { riders } = this.props;
     return (
